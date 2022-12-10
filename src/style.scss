@@ -1,0 +1,51 @@
+.main-wrapper {
+  height: 300px;
+  position: relative;
+  top: 100px;
+}
+.main-wrapper .standart-cactus {
+  position: absolute;
+  bottom: 2px;
+  height: 100px;
+  animation: standart-cactus 1s infinite linear;
+}
+.main-wrapper .standart-cactus img {
+  height: inherit;
+}
+#dino {
+  max-width: 100px;
+  position: absolute;
+  bottom: 2px;
+}
+#dino img {
+  max-width: inherit;
+}
+#line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+.jump {
+  animation: jump 0.5s ease-in-out;
+}
+@keyframes standart-cactus {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -45px;
+  }
+}
+@keyframes jump {
+  0% {
+    bottom: 2px;
+  }
+  50% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 2px;
+  }
+}
